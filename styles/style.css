@@ -61,7 +61,7 @@ li span {
 }
 .giftbox:after {
   position: absolute;
-  color: #fff;
+  color: pink;
   width: 100%;
   content: "Click Me!";
   left: 0;
@@ -179,4 +179,26 @@ li span {
       transform: translateY(100%);
       opacity: 0;
  }
+}
+
+#container {
+  text-align: center; /* Căn giữa theo chiều ngang */
+}
+#youtubeButton {
+  margin: auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  
+}
+
+#youtubeButton:hover {
+  background-color: #ff1f61;
+  transform: scale(1.05);
 }
