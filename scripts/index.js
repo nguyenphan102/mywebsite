@@ -4,7 +4,7 @@ const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
 
 const config = {
-  birthdate: 'Sep 7, 2024',
+  birthdate: 'Sep 4, 2024',
   name: 'Hằng iu'
 };
 
@@ -48,7 +48,8 @@ x = setInterval(function() {
     hw = w / 2, // half-width
     hh = h / 2,
     opts = {
-      strings: ['HAPPY', 'BIRTHDAY!', config.name], 
+      strings: ['CHÚC MỪNG SINH NHẬT','CÔNG CHÚA NGUYỆT HẰNG CỦA ANH'], 
+    
       charSize: 30,
       charSpacing: 35,
       lineHeight: 40,
@@ -96,6 +97,7 @@ x = setInterval(function() {
     Tau = Math.PI * 2,
     TauQuarter = Tau / 4,
     letters = [];
+
 
   ctx.font = opts.charSize + 'px Verdana';
 
@@ -422,6 +424,7 @@ x = setInterval(function() {
     if (done) for (let l = 0; l < letters.length; ++l) letters[l].reset();
   }
 
+
   for (let i = 0; i < opts.strings.length; ++i) {
     for (let j = 0; j < opts.strings[i].length; ++j) {
       letters.push(
@@ -464,6 +467,7 @@ x = setInterval(function() {
     function init() {
       box.addEventListener('click', openBox, false);
       box.addEventListener('click', showfireworks, false);
+      box.addEventListener('Click', showlink, false);
     }
 
     function stepClass(step) {
